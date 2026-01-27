@@ -4103,8 +4103,8 @@ We look forward to building your vision.`)};return h.jsxs("div",{className:"fixe
 
  <logic-gate id="HIRE_RATE_CALC">
             <if condition="0 - 1 DAY"><result class="🟢_GO" /></if>
-            <if condition="2DAY"><result class="🟡_READ_FIRST" /></if>
-            <if condition="3DAY++ <result class="🔴_STOP" /></if>
+            <if condition="2-6DAY"><result class="🟡_READ_FIRST" /></if>
+            <if condition="7DAY++ <result class="🔴_STOP" /></if>
         </logic-gate>
 
         <display-render>
@@ -4159,12 +4159,13 @@ check preferred qualifications, like location need to be different country or th
                 Using my Brandflow Quantum Framework, I don’t approach this as a quick design task, but as a strategic visual foundation that supports growth and long-term clarity.
                 I noticed your target audience is [target market]—have you considered how your current visual hierarchy, color psychology, and typography are influencing their decision-making today?
                 If aligned, I can help you close that visual gap with a system that’s scalable, premium, and profit-oriented.
+
                 Best regards,
                 Syams
                 Senior Branding Strategist – KreavityWorks
             </text>
         </content-block>
-
+ http://kreavityworks.com/talent-syams  must have in cover leter
          <efficiency-ratio type="FIXED_PRICE_PROJECTS_ONLY">
             <rule>No need to show / hide if FOR_HOURLY_RATE_PROJECTS</rule>
             <row>Phase 1: [ACTION_ADJUST] – [DURATION] – $[PRICE]</row>
@@ -4566,8 +4567,8 @@ Adjust ratio between lowest and highest client hourly rates.
 
  <logic-gate id="HIRE_RATE_CALC">
             <if condition="0 - 1 DAY"><result class="🟢_GO" /></if>
-            <if condition="2DAY"><result class="🟡_READ_FIRST" /></if>
-            <if condition="3DAY++ <result class="🔴_STOP" /></if>
+            <if condition="2-6DAY"><result class="🟡_READ_FIRST" /></if>
+            <if condition="7DAY++ <result class="🔴_STOP" /></if>
         </logic-gate>
 
         <display-render>
@@ -4629,6 +4630,7 @@ check preferred qualifications, like location need to be different country or th
                 Best regards,
                 Hadist
                 Visual Design Specialist – KreavityWorks
+ http://kreavityworks.com/talent-hadist must have in cover leter
             </text>
         </content-block>
 
