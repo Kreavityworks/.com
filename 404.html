@@ -2,24 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>Kreavity Works | Redirecting...</title>
     <script type="text/javascript">
-      // JEMBATAN PENYELAMAT URL
-      // Script ini menangkap URL "Error" (misal /talent-syams)
-      // Lalu melemparnya kembali ke index.html agar ditangkap oleh App.jsx
+      // --- KREAVITYWORKS ROUTING RECOVERY SYSTEM ---
+      // Script ini bertugas mengubah 404 Error menjadi Parameter URL
+      // Contoh: /talent-syams => /?p=/talent-syams
       
-      var pathSegmentsToKeep = 0;
-
       var l = window.location;
+      
+      // Ambil path lengkap (misal: /talent-syams atau /project/neon-chaos)
+      var path = l.pathname;
+      var query = l.search;
+      var hash = l.hash;
+
+      // Redirect ke root index.html dengan parameter 'p'
+      // replace() digunakan agar history browser tidak penuh dengan link error
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
-        l.pathname.slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
+        '/?p=' + encodeURIComponent(path) + 
+        (query ? '&q=' + encodeURIComponent(query) : '') +
+        hash
       );
     </script>
   </head>
   <body>
-  </body>
+    </body>
 </html>
